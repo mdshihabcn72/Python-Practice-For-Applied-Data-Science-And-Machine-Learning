@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    double height, weight, bmi;
+    /*double height, weight, bmi;
     
     cout << "请输入您的身高（米）: ";
     cin >> height;
@@ -27,7 +27,20 @@ int main() {
         cout << "分类: 超重" << endl;
     } else {
         cout << "分类: 肥胖" << endl;
-    }
+    }*/
+
+    double t,p,w,s;
+    cout<<"Input Weight :"<< endl;
+    cin>>w;
+    cout<<"Input distance :"<<endl;
+    cin>>s;
+    if (s<100) p=30;
+    else if (s<200) p= 27.5;
+    else if (s<300) p= 25;
+    else if (s<400) p =22.5;
+    else p =20;
+    t = p*w*s;
+    cout<<"The cost is :"<<t<<"$"<<endl;
     
     return 0;
 }
